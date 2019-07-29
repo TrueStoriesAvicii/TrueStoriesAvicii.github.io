@@ -1,0 +1,441 @@
+@media screen and (max-width: 1440px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    
+    .iphone-feature {
+        .iPhone6-feature {
+            img {
+                margin-left: -480px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+    .container {
+        overflow: hidden;
+    }
+    .main-screen {
+        .iPhone-img img {
+            height: 437px;
+        }
+    }
+    .iphone-feature {
+        .iPhone6-feature {
+            img {
+                margin-left: -480px;
+            }
+        }
+    }
+    .map-feature {
+        .anywhere { 
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+    }
+    .iphone-screens {
+        .screen-title {
+            h2 {
+                &::after {
+                    left: 470px;
+                }
+            }
+        }
+        .screens {
+            margin-left: 234px;
+            img:nth-child(5) {
+                display: none;
+            }
+        }
+    }
+    .customers {
+        .slider-pos {
+            .slider-block {
+                .slick-prev {
+                    left: -110px;
+                }
+                .slick-next {
+                    right: -110px;
+                }
+            }
+        }
+    }
+    .plan {
+        .choice-plan {
+            margin-right: 40px;
+            margin-left: 40px;}
+    }
+    .footer {
+        .first-block {
+            margin-left: 40px;
+        }
+        .learn-more {
+            margin-left: 170px;
+        }
+    }
+
+}
+  
+@media screen and (max-width: 992px) {
+    body {
+        overflow-x: hidden;
+    }  
+    .main-screen {
+        .iPhone-img img {
+            height: 437px;
+        }
+    }
+    .iphone-feature {
+        .iPhone6-feature {
+            img {
+                margin-left: -530px;;
+            }
+        }
+
+    }
+    .map-feature {
+        .anywhere { 
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+    }
+    .iphone-screens {
+        height: 1200px;
+        .screen-title {
+            h2 {
+                &::after {
+                    left: 472px;
+                }
+            }
+        }
+        .screens {
+            margin-left: 234px;
+            img:nth-child(5) {
+                display: none;
+            }
+        }
+    }
+    .customers {
+        .slider-pos {
+            .slider-block {
+                .slick-prev {
+                    left: -110px;
+                }
+                .slick-next {
+                    right: -110px;
+                }
+            }
+        }
+    }
+    .plan {
+        .choice-plan {
+            margin-right: 40px;
+            margin-left: 40px;}
+    }
+    .footer {
+        .first-block {
+            margin-left: 40px;
+        }
+        .learn-more {
+            margin-left: 160px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 959px) {
+    .iphone-screens {
+        height: 1200px;
+        .screen-title {
+            h2 {
+                &::after {
+                    left: 440px;
+                }
+            }
+        }
+        .screens {
+            margin-left: 204px;
+        }
+    }
+    .plan {
+        .choice-plan {
+            margin-right: 40px;
+            margin-left: 30px;
+        }
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .main-screen {
+        .iPhone-img img {
+            height: 365px;
+        }
+        .iPhone-img img {
+            height: 383px;
+        }
+        .header {
+            .container {
+                overflow: visible;
+            }
+            position: relative;
+            .brand {
+                margin-top: 0px;
+                margin-left: -6%;      
+            }
+            .get-app {
+                position: absolute;
+                margin-top: -22px;
+                margin-left: -136px;
+            }
+            ul {
+                display: none;
+            }
+        }
+    }
+    .features {
+        .justify-content-around {
+            justify-content: baseline;
+        }
+        .features-block {
+            text-align: center;
+        }
+    }
+    .iphone-feature {
+        .iPhone6-feature {
+            img {
+                margin-left: -600px;
+            }
+        }
+
+    }
+    .map-feature {
+        .anywhere { 
+            margin-top: 130px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .world-map {
+            margin-top: 130px;
+        }
+    }
+    .iphone-screens {
+        .screen-title {
+            margin-top: 66px;
+            h2 {
+                &::after {
+                    left: 345px;
+                }
+            }
+        }
+        .screens {
+            margin-left: 240px;
+            height: 865px;
+            img:nth-child(2) {
+                margin-left: -118px;
+            }
+           
+        }
+    }
+    .customers {
+        .slider-pos {
+            .slider-block {
+                .slick-prev {
+                    left: -110px;
+                }
+                .slick-next {
+                    right: -110px;
+                }
+            }
+        }
+    }
+    .plan {
+        .choice-plan {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+        .plan-wrapper {
+            .tariff-block {
+                .tariff-btn {
+                    width: 146px;
+                }
+            }
+        }
+    }
+    .footer {
+        .first-block {
+            margin-left: 20px;
+        }
+        .learn-more {
+            margin-left: -2px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .main-screen {
+        .iPhone-img img {
+            height: 383px;
+        }
+        .header {
+            .container {
+                overflow: visible;
+            }
+            position: relative;
+            .brand {
+                margin-top: -24px;
+                margin-left: 35%;      
+            }
+            .get-app {
+                position: absolute;
+                margin-top: -32px;
+                margin-left: 72%;
+            }
+            ul {
+                display: none;
+            }
+        }
+    }
+    .features {
+        height: 950px;
+        // .justify-content-around {
+        //     justify-content: baseline;
+        // }
+        .features-block {
+            text-align: center;
+        }
+        .features-block:nth-child(2) {
+            margin-top: 50px;
+        }
+    }
+    .iphone-feature {
+        height: 560px;
+        .iPhone6-feature {
+            display: none;
+            img {
+                margin-left: -600px;
+            }
+        }
+        .protect {
+            margin-top: 80px;
+            margin-left: 0;
+            text-align: center;
+        }
+
+    }
+    .map-feature {
+        height: 660px;
+        text-align: center;
+        .anywhere { 
+            margin-top: 130px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .world-map {
+            display: none;
+        }
+    }
+    .iphone-screens {
+        .screen-title {
+            margin-top: 66px;
+            h2 {
+                &::after {
+                    left: 250px;
+                }
+            }
+        }
+        .screens {
+            margin-left: 0px;
+            height: 865px;
+            img:nth-child(2) {
+                display: none;
+            }
+            img:nth-child(3) {
+                margin-left: 370px;
+            }
+            img:nth-child(4) {
+                display: none;
+            }
+           
+        }
+    }
+    .customers {
+        .slider-pos {
+            .slider-block {
+                width: 500px;
+                .slick-prev {
+                    left: -110px;
+                }
+                .slick-next {
+                    right: -110px;
+                }
+            }
+        }
+    }
+    .plan {
+        height: 1200px;
+        .choice-plan {
+            text-align: center;
+            margin-top: 100px;
+            .you-are {
+                margin-bottom: 30px;
+            }
+            .button-wrapper {
+                margin: 0px auto;
+            }
+        }
+        .plan-wrapper {
+            .tariff-block {
+                margin-top: 80px;
+                &.active {
+                    margin-top: 60px;
+                }
+                .tariff-btn {
+                    width: 146px;
+                }
+            }
+        }
+    }
+    .footer {
+        .first-block {
+            margin-left: 25%;
+            text-align: center;
+        }
+        .learn-more {
+            margin-left: 40px;
+        }
+        .footer-sm {
+            .more-free {
+                padding: 0;
+                padding-top: 2px;
+                margin-left: 14px;
+            }
+            .made-by {
+                padding: 0;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+ 
+

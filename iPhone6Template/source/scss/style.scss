@@ -1,0 +1,851 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Varela+Round&display=swap');  
+@import "mixins";
+@import "variables";
+@import "reset";
+
+body {
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Varela Round', sans-serif;
+    color: #26272d;
+}
+
+h1 {
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 72px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+p {
+    color: #8c8f94;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px
+}
+
+button, input {
+    font-family: Lato;
+    font-weight: 600;
+    transition: 0.5s all;
+}
+
+.container {
+    max-width: 1170px;
+}
+
+                    // MAIN SCREEN
+
+.main-screen {
+    background-image: url(../img/Photo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1000px;
+
+                    // HEADER
+    .header {
+        padding-top: 45px;
+                    // HAMBURGER-MENU
+        input {
+            width: 20px;
+            height: 16px;
+            cursor: pointer;
+            opacity: 0;
+        }
+        .line {
+            cursor: pointer;
+            position: absolute;
+            margin-top: -17px;
+            width: 20px;
+            height: 2px;
+            background-color: black;
+            transition-duration: .25s;
+        }
+    
+        #hamb-menu:checked ~ .first{
+            display: none;
+        }
+    
+        #hamb-menu:checked ~ .second{
+            transform: rotate(45deg);
+        }
+    
+        #hamb-menu:checked ~ .third{
+            transform: rotate(-45deg);
+        }
+    
+        #hamb-menu:checked ~ .fourth{
+            display: none;
+        }   
+    
+        .first {
+    
+        }
+    
+        .second {
+            margin-top: -12px;
+        }
+    
+        .third {
+            margin-top: -12px;;
+        }
+    
+        .fourth {
+            margin-top: -7px;;
+        }
+    
+                            // HAMBURGER-MENU END
+        a {
+            color: #26272d;
+            font-weight: 600;
+            &:hover {
+                color: #8c8f94;
+                text-decoration: none;
+            }
+        }
+    
+        ul {
+            li {
+                padding: 0px 12px;
+            }
+        }
+    
+    
+        .brand {
+            font-weight: 600;
+            text-transform: uppercase;
+            span {
+                font-weight: 800;   
+            }
+        }
+        .get-app {
+            width: 132px;
+            height: 42px;
+            border-radius: 21px;
+            border: 0px;
+            background-color: #267df4;
+            outline: none;
+            font-weight: 600;
+            color: white;
+            i {
+                font-size: 20px;
+            }
+            &:focus {
+                background-color: transparent;
+                transition: 0.5s all;
+                border-radius: 21px;
+                border: 1px solid #8c8f94;
+                color: #000;
+            }
+        }
+    }
+
+                            // MAIN-SCTEEN STYLE
+
+    h1 {
+        margin-top: 96px;
+    }
+
+    .ms-description {
+        margin: 0px auto;
+        margin-top: 18px;
+        p {
+            font-size: 20px;
+            text-align: center;
+            line-height: 28px;
+        }
+    }
+
+    .w-btn-style {
+        margin-top: 63px;
+        text-align: center;
+        .watch-btn {
+            font-weight: 600;
+            width: 205px;
+            height: 50px;
+            border-radius: 25px;
+            border: 1px solid #bfc0c3;
+            background-color: Transparent;
+            outline: none;
+            i {
+                font-size: 18px;
+            }   
+            &:focus {
+                opacity: 0.6;
+                transition: 0.5s all;
+            }
+        }
+    }
+
+    .iPhone-img {
+        text-align: center;
+        margin-top: 65px;
+        img {
+            margin-left: 26px;
+        }
+    }
+}
+
+                            // MAIN-SCREEN STYLE END
+
+                            // FEATURES
+.features {
+    
+    height: 600px;
+    .features-block {
+        margin-top: 123px;
+        img {
+
+        }
+
+        h3 {
+            margin-top: 45px;
+            margin-bottom: 48px;
+        }
+
+        p {
+            font-weight: 400;
+            margin-bottom: 36px;
+        }
+    }
+}
+
+                            // FEATURES END
+
+                            // iPhone FEATURE
+
+.iphone-feature {
+    height: 900px;
+
+    .iPhone6-feature {
+        position: relative;
+        img {
+            margin-top: 86px;
+            margin-left: -360px;
+        }
+    }
+    .protect {
+        margin-left: 96px;
+        margin-top: 296px;
+        h2 {
+            margin-bottom: 40px;
+        }
+        p {
+            margin-bottom: 62px;
+        }
+        p:nth-child(2) {
+            margin-bottom: 16px;
+        }
+        .try-hack {
+            width: 202px;
+            height: 42px;
+            border-radius: 21px;
+            background-color: #267df4;
+            border: 1px solid #267df4;
+            color: white;
+            outline: none;
+        }
+
+        .learn-more {
+            margin: 0px 4%;
+            width: 142px;
+            height: 42px;   
+            border-radius: 21px;
+            border: 1px solid #bfc0c3;
+            background-color: transparent;
+            outline: none;
+        }
+    }
+}
+
+                        // iPhone FEATURES END
+
+                        // MAP FEATURES 
+
+.map-feature {
+    height: 900px;
+    .anywhere {
+        margin-top: 240px;
+        h2 {
+            margin-bottom: 44px;
+        }
+        p {
+            margin-bottom: 44px;
+        }
+
+        p:nth-child(2) {
+            margin-bottom: 22px;
+        }
+
+        .partners {
+            p {
+                font-weight: 800;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: #000;
+                margin-bottom: 20px;
+            }
+            img {
+                margin-right: 24px;
+            }
+            img:nth-child(3) {
+                margin-right: 0px;
+                padding-top: 3px;
+            }
+        }
+    }
+    .world-map {
+        margin-top: 240px;
+    }
+}
+                        // MAP FEATURES END
+
+                        // iPhone SCREENS
+
+.iphone-screens {
+    height: 1200px;
+    background-color: #f5f5f8;
+    .screen-title {
+        margin-top: 140px;
+        h2 {
+            text-align: center;
+            position: relative;
+            &::after {
+                position: absolute;
+                top: 78px;
+                left: 545px;
+                content: '';
+                width: 50px;
+                height: 2px;
+                border-radius: 1px;
+                background-color: #267df4;
+
+            }
+        }
+        p {
+            margin-top: 60px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 700;
+        }
+    }
+    .screens {
+        margin-top: 40px;
+        margin-left: 310px;
+        img {
+            margin: 0px 10px;
+            box-shadow: 15px 41px 66px rgba(92, 95, 101, 0.28), 3px 9px 16px rgba(61, 61, 62, 0.15);
+        }
+
+        img:nth-child(1) {
+            margin-left: -612px;
+        }
+
+        img:nth-child(3) {
+            border-radius: 52px;
+        }
+        
+    }
+}
+
+                        // iPhone SCREENS END
+
+                        // READY TO BUY
+
+.ready-to-buy {
+    height: 550px;
+    background-color: #f5f5f8;
+    .brand-small { 
+        text-align: center;
+        text-transform: uppercase;
+        color: #3a3d4b;
+        font-weight: 300;
+        h2 {
+            text-transform: none;
+            margin-top: 30px;
+        }
+        span {
+            color: #000;
+            font-weight: 400;
+        } 
+    }
+
+    .input-pos {
+        margin-top: 40px;
+        .input-wrap {
+            margin: 0px auto;
+            width: 502px;
+            height: 50px;
+            border-radius: 25px;
+            border: 1px solid #bfc0c3;
+            .input-field {
+                input {
+                    padding-left: 26px;
+                    outline: none;
+                    border: none;
+                    background-color: transparent;
+                }
+                button {
+                    outline: none;
+                    margin: 3px 0px 0px 112px;
+                    width: 164px;
+                    height: 42px;
+                    border-radius: 21px;
+                    border: 0px;    
+                    background-color: #6fc754;
+                    color: white;
+                }
+            }
+        }
+    }
+    .download-from {
+        text-align: center;
+        margin-top: 62px;
+        p {
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+        button {
+            margin-top: 22px;
+            outline: none;
+            position: relative;
+            width: 210px;
+            height: 60px;
+            border-radius: 30px;
+            border: 0px;
+            background-color: #131315;
+            color: white;
+            font-size: 12px;
+            font-weight: 400;
+            &:focus {
+                background-color: #fff;
+                color: #000;
+                transition: 0.5s all;
+                border: 1px solid #bfc0c3;
+            }
+            span {
+                padding-left: 36px;
+            }
+            span:nth-child(4) {   
+                font-size: 22px;
+                line-height: 15px;
+            }
+            i {
+                font-size: 34px;
+                position: absolute;
+                margin: 0px 0px 0px -10px;
+            }
+        }
+    }
+
+}
+
+                        // READY TO BUY END
+
+                        // CUSTOMERS
+
+.customers {
+    height: 750px;
+    .slider-pos {
+        margin-top: 170px;
+        .slider-block {
+            margin: 0px auto;
+            width: 570px;
+            height: 412px;
+            text-align: center;
+
+            .rev-block {
+                width: 570px;
+                height: 475px;
+                outline: none;
+            }
+
+            img {
+                margin: 0 auto;
+            }
+            h3 {
+                margin-bottom: 30px;
+            }
+            .rev-photo {
+                margin-bottom: 60px;
+            }
+            .star {
+                display: inline-block;
+                margin-bottom: 54px;
+                margin-top: 28px;
+            }
+            .name {
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            button {
+                width: 23px;
+                height: 42px;
+                top: 16%;
+            }
+            .slick-prev {
+                left: -200px;
+            }
+            .slick-next {
+                right: -200px;
+            }
+            .slick-prev:before {
+                background-image: url(../img/Arrow-Left.png);
+                background-size: 23px 42px;
+                display: inline-block;
+                width: 23px;
+                height: 42px;
+                content:"";
+            }
+            .slick-next:before {
+                background-image: url(../img/Arrow-Right.png);
+                background-size: 23px 42px;
+                display: inline-block;
+                width: 23px;
+                height: 42px;
+                content:"";
+            }
+        }
+    }
+}
+
+                    //    CUSTOMERS END
+
+                        // PLAN
+
+.plan {
+    height: 900px;
+    background-color: #f4f4f5;  
+    .choice-plan {
+        margin-top: 200px;  
+        margin-right: 96px;
+        .button-wrapper {
+            margin-top: 18px;
+            width: 266px;
+            height: 50px;
+            border-radius: 25px;
+            border: 1px solid #bfc0c3;
+            button {
+                outline: none;
+                margin-left: 4px;
+                margin-top: 3px;
+                width: 124px;
+                height: 42px;
+                border-radius: 21px;
+                border: 0px;
+                background-color: transparent; 
+            }
+            .active {
+                outline: none;
+                width: 124px;
+                height: 42px;
+                box-shadow: 10px 28px 50px rgba(92, 95, 101, 0.28), 2px 5px 20px rgba(61, 61, 62, 0.15);
+                border-radius: 21px;
+                border: 0px;
+                background-color: #ffffff;
+            }
+        }
+    }
+
+    .you-are {
+        margin-top: 40px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    p {
+        margin-top: 46px;
+        margin-bottom: 34px;
+    }
+
+    .lets-talk {
+        color: #8c8f94;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .plan-wrapper {
+        display: flex;
+        .tariff-block {
+            margin-top: 190px;
+            width: 340px;
+            height: 510px;
+            border-radius: 10px;
+            background-color: #ebebed;
+            text-align: center;
+            transition: 0.5s all;
+            h4 {
+                font-size: 32px;
+                padding-top: 40px;
+                margin-bottom: 26px;
+            }
+            .cost {
+                margin: 0px auto;
+                margin-bottom: 44px;
+                width: 63px;
+                height: 28px;
+                border-radius: 14px;
+                border: 1px solid #bfc0c3;
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 25px;
+            }
+            .title {
+                font-size: 20px;
+                color: #8c8f94;
+            }
+            .tariff-features {
+                font-weight: 600;
+                i {
+                    color: #6fc754;
+                }
+                .feature-1 {
+                    margin-top: 30px;
+                }
+                .feature-2 {
+                    margin: 14px 0px;
+                }
+            }
+            .tariff-btn {
+                margin-top: 50px;
+                width: 202px;
+                height: 42px;
+                border-radius: 21px;
+                border: 1px solid #267df4;
+                outline: none;
+                background-color: transparent;
+                color: #267df4;
+                transition: 0.5s all;
+                &:active {
+                    color:white ;
+                    background-color: #267df4;
+                    transition: 0.5s all;
+                }
+                
+            }
+        }
+        .tariff-block:nth-child(1) {
+            .tariff-btn {
+                margin-top: 73px;
+            }
+        }
+        .active {
+            margin-top: 170px;
+            width: 340px;
+            height: 550px;
+            box-shadow: 10px 28px 50px rgba(92, 95, 101, 0.2);
+            border-radius: 10px;
+            background-color: #ffffff;
+            transition: 0.5s all;
+            .tariff-btn {   
+                background-color: #267df4;
+                color: white;   
+                &:hover {
+                    color:#267df4 ;
+                    background-color: transparent;
+                    transition: 0.5s all;
+                }
+            }
+        }
+    }
+}
+
+                        // PLAN END
+
+                        // SUBSCRICBE
+
+.subscribe {
+    height: 350px;
+    background-color: #ffffff;
+    text-align: center;
+    border-bottom: 1px solid #eaecf1;
+    .title {
+        margin-top: 76px;
+        margin-bottom: 48px;
+        text-align: center;
+    }
+    .input-pos {
+
+        .input-wrap {
+            margin: 0px auto;
+            margin-bottom: 28px;
+            width: 502px;
+            height: 50px;
+            border-radius: 25px;
+            border: 1px solid #bfc0c3;
+            .input-field {
+                input {
+                    padding-left: 26px;
+                    outline: none;
+                    border: none;
+                    background-color: transparent;
+                }
+                button {
+                    outline: none;
+                    margin: 3px 0px 0px 112px;
+                    width: 164px;
+                    height: 42px;
+                    border-radius: 21px;
+                    border: 0px;    
+                    background-color: #6fc754;
+                    color: white;
+                }
+            }
+            p {
+                font-size: 16px;
+                margin-top: 28px;
+            }
+        }
+    }
+
+}
+
+                        // SUBSCRIBE END
+
+                        // FOOTER
+
+.footer { 
+    height: 550px;
+    .brand {
+        position: relative;
+        margin-top: 84px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-weight: 400;
+        span {
+            font-weight: 700;
+        }
+    }
+    p {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    button {
+        width: 140px;
+        height: 42px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border: 0px;
+        border-radius: 5px;
+        outline: none;
+        transition: 0.5s all;
+        &:focus {
+            border: 1px solid #bfc0c3;
+            background-color: white;
+            color: #000;
+        }
+        i { 
+            font-size: 28px;
+            position: absolute;
+            margin-left: -60px;
+            margin-top: -1px;
+        }
+        span {
+            margin-left: 24px;
+            font-size: 11px;
+            position: absolute;
+            margin-left: -32px;
+            margin-top: -4px;
+        }
+        span:nth-child(4) {
+            font-size: 20px;
+            line-height: 1;
+            position: absolute;
+            margin-top: -16px;
+        }
+        
+    }
+    .links {
+        margin-top: 40px;
+        a {
+            color: #bfc0c3;
+            margin-right: 20px;
+            i {
+                font-size: larger;
+            }
+        }
+    }
+
+    ul {
+        li {
+            display: block;
+        }
+    }
+
+    .learn-more {
+        margin-top: 84px;
+        margin-left: 194px;
+        .title {
+            margin-bottom: 24px;
+            color: #26272d;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        a {
+            color: #8c8f94;
+        }
+    }
+
+    .about-us {
+        margin-top: 84px;
+        .title {
+            margin-bottom: 24px;
+            color: #26272d;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        a {
+            color: #8c8f94;
+        }
+    }
+
+    .support {
+        margin-top: 84px;
+        .title {
+            margin-bottom: 24px;
+            color: #26272d;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        a {
+            color: #8c8f94;
+        }
+    }
+    .footer-sm {
+        border-top: 1px solid #eaecf1;
+        height: 88px;
+        margin-top: 116px;
+        .more-free {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #8c8f94;
+            margin-top: 20px;
+        }
+    }
+    .made-by {
+        margin-top: 20px;
+        p {
+            color: #26272d;
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        img {
+            margin-top: -7px;
+        }
+    }
+}
+
+                        
