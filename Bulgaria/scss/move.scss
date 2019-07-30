@@ -1,0 +1,52 @@
+header {
+    
+    
+    .top__phone {
+        margin-top: -20px;
+    }
+    .answer__block {
+        line-height: 24px;
+        letter-spacing: 0.34px;
+        font-size: 18px;
+        padding-top: 42px;
+        span {
+            font-weight: 800;
+            letter-spacing: 0.34px;
+        }
+    }
+}
+
+.moving {
+    background-image: none;
+    padding-top: 55px;
+    margin-bottom: 86px;
+    .container  {
+        height: 520px;
+        box-shadow: 0 3px 1px rgba(159, 160, 160, 0.18);
+    }
+    p {
+        color: #000000;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+.consultation {
+	background-color: #11b2f5;
+	background-image: url(../img/confusingbg.png);
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    .container {
+        box-shadow: none;
+    }
+    h2 {
+        margin-bottom: 8px;
+    }
+    
+}    

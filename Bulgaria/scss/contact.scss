@@ -1,0 +1,103 @@
+
+header {
+    height: 412px;
+    .answer__block {
+        width: 1030px;
+        text-align: center;
+        height: 88px;
+        padding-top: 54px;
+        background-color: #fff;
+        margin-top: 126px;
+        p {
+            text-transform: none;
+            font-weight: 300;
+            color: black;
+        }
+    }
+}
+
+.heading__title {
+    margin-top: 20px;
+}
+
+.consultation {
+    background-image: none;
+    background-color: #fff;
+    margin-bottom: 86px;
+    .container {
+        box-shadow: 0 3px 1px rgba(159, 160, 160, 0.18);
+    }
+    .first__block {
+        width: 360px;
+        margin-right: 146px;
+        margin-left: 133px;
+        margin-top: 116px;
+        .tel {  
+            position: relative;
+            margin-bottom: 46px;
+            width: 300px;
+            img {
+                position: absolute;
+                margin-left: -60px;
+            }
+            h4 {
+                text-transform: uppercase;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            p {
+                color: #000000;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: left;
+                text-transform: none;
+                font-weight: 400;
+            }
+        }
+    }
+
+
+
+    .form__block {
+        width: 390px;
+        height: 518px;
+        margin-top: 38px;
+        margin-bottom: 60px;
+        background-color: #11b2f5;
+        color: #fff;
+        border: 1px solid #11b2f5;
+        border-radius: 4px;
+        h3 {
+            padding-top: 40px;
+            margin-bottom: 16px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+
+            span {
+                font-size: 30px;
+            }
+        }
+        p {
+            font-size: 17px;
+            margin-bottom: 33px;
+        }
+        form {
+            width: 292px;
+            margin-left: 32px;
+            input {
+                width: 292px;
+                height: 53px;
+                font-size: 11px;
+                opacity: 0.56;
+            }
+            button {
+                width: 292px;
+                height: 53px;
+                font-size: 13px;
+                font-weight: 600;
+
+            }
+        }
+    }
+}
